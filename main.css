@@ -9,8 +9,9 @@ h1 {
     font-size: 75px;
     font-family: oswald;
     margin: 10px;
+    margin-top:90px;
     border-radius: 10px;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: inset 0px 1px 6px rgb(0, 0, 0);
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
@@ -19,24 +20,28 @@ h1 {
     font-family: oswald;
     font-weight: 300;
     margin: 10px;
+    margin-left: 17px;
+    margin-right: 17px;
     border-radius: 10px;
     padding: 10px;
     padding-left: 5px;
+    padding-right: 5px;
     font-size: 25px;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
-    display: flexbox;
-    
+    box-shadow: inset 0 1px 6px rgb(0, 0, 0);
+    max-width: 10000px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 1.5s, padding-left 0.5s, padding-right 0.5s;
+    transition-delay: margin-right 1.5;
 }
-#topbarinnerelement {
+
+.topbarinnerelement {
     display: inline;
 }
 
 #homeicon {
     display: inline;
-}
-#seperator {
-    border-right: 10px white;
-    height: 20px;
+    overflow: hidden;
 }
 section {
     background-color: #282532;
@@ -45,7 +50,7 @@ section {
     border-radius: 10px;
     padding: 1px 5px 1px 10px;
     display: inherit;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 1px 6px rgb(0, 0, 0);
     flex-grow: 50;
 }
 
@@ -54,17 +59,21 @@ section {
     align-items:flex-start;
 }
 
-#s1img {
+.s1img {
     border-radius: 10px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
     width: 150px;
     margin-top: 5px;
+    transition: border-radius 0.5s;
+}
+.s1img:hover {
+    border-radius: 2px;
 }
 #img1container {
     background-color: #282532;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 1px 6px rgb(0, 0, 0);
     margin-right: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -72,33 +81,42 @@ section {
     max-width: 150px;
 
 }
-#topbarelement {
+.topbarelement {
     background-color: #3b3846;
     border-radius: 10px;
     padding-left: 3px;
-    padding-right: 3px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    padding-right: 5px;
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 2.5px;
+    margin-bottom:2.5px;
+    transition: padding-left 0.5s, padding-right 0.5s, box-shadow 0.25s, max-width 0.5s;
     
 }
-#s1container {
+.topbarelement:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.398);
+}
+.s1container {
     background-color: #282532;
     font-family: oswald;
     margin: 10px;
     border-radius: 10px;
     padding: 7px 7px 7px 7px;
-    box-shadow: inset 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 1px 6px rgb(0, 0, 0);
 }
-#section1header {
+.section1header {
     font-family: oswald;
     font-size: 25px;
     text-align: center;
     background-color: #3b3846;
     border-radius: 10px;
     margin-bottom: 5px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 3px 3px 4px #17151b,-3px -3px 4px #36304b;
+
 }
 #linksmain {
     background-color: #3b3846;
@@ -106,22 +124,119 @@ section {
     margin-top: 7px;
     padding: 5px;
     padding-left:10px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
     line-height: 2;
 }
 a {
     color: rgb(202, 196, 255);
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: color 0.2s, text-shadow 0.5s;
 }
 a:hover {
     color: rgb(231, 225, 255);
+    text-shadow: 0px 0px 10px rgb(190, 161, 213);
 
 }
 #newestrenderimg {
     width: 100%;
     max-width: 1000px;
     border-radius: 10px;
-    box-shadow: 0 1px 6px rgb(0, 0, 0), 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
     margin-top: 5px;
 
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+#topbarcontainer {
+    background-color: #3b3846;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transition: width 1s, box-shadow 0.5s, border-radius 0.25s;
+}
+#topbarcontainer.topbarscrolled {
+    width: 85px;
+    padding-right: 0px;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
+}
+
+.topbarelement.topbarscrolled {
+    max-width: 0px;
+    overflow:hidden;
+
+}
+.topbarelement.topbarattop {
+    font-size: 25px;
+    max-width: 500px;
+    overflow:hidden;
+}
+#homelink {
+    align-items:center;
+    display:flex;
+    max-height: 38px;
+}
+#topbar.topbarscrolled {
+    max-width: 42px;
+}
+#navbarmenuicon {
+    max-height: 2px;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0);
+    transition: color 1s;
+}
+#navbarmenuicon.topbarscrolled {
+    color: rgba(255,255,255,1)
+}
+#navbarmenubutton {
+    background-color: #3b3846;
+    box-shadow: 0 1px 6px rgb(0, 0, 0);
+    display: inline-block;
+    max-height: 40px;
+    transition: max-width 1s, padding, 1s, margin 1s;
+    max-width: 0px;
+}
+#navbarmenubutton.topbarscrolled {
+    display: inline-block;
+    max-width: 30px;
+    border-radius: 10px;
+    padding-left: 3px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom:2.5px;
+}
+.headertext {
+    margin: 2px;
+    display: inline;
+}
+.toaster {
+    color: gray;
+    margin: 2px;
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom:2.5px;
 }

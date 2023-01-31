@@ -115,7 +115,7 @@ section {
     background-color: #3b3846;
     border-radius: 10px;
     margin-bottom: 5px;
-    box-shadow: 3px 3px 4px #17151b;
+    box-shadow: 3px 3px 4px #17151b,-3px -3px 4px #36304b;
 
 }
 #linksmain {

@@ -13,7 +13,6 @@ h1 {
     border-radius: 10px;
     box-shadow: inset 0px 1px 6px rgb(0, 0, 0);
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-    overflow: hidden;
 }
 
 #topbar {
@@ -116,7 +115,7 @@ section {
     background-color: #3b3846;
     border-radius: 10px;
     margin-bottom: 5px;
-    box-shadow: 3px 3px 4px #17151b;
+    box-shadow: 3px 3px 4px #17151b,-3px -3px 4px #36304b;
 
 }
 #linksmain {
@@ -166,6 +165,7 @@ a:hover {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
+  -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
 #topbarcontainer {

@@ -46,11 +46,13 @@
                 <div class=section1content>
                     note: renders are highly compressed to save on load time. click on images to see uncompressed version.
                 </div>
-                <button id="sortbutton">
+                <button id="sortbutton", onclick="SortData()">
                     Sort: Newest
                 </button>
             </div>
         
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            </script>
 
             <div class=imagecontainer>
                 <div class=renderlink data-date="20200906">
@@ -153,6 +155,7 @@
 
         <script src='../main.js'></script>
         <script src="downloads_gallery.js"></script>
+        <script> SortData()</script>
 
     </body>
 </html>

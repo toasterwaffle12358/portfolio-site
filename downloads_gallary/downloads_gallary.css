@@ -231,7 +231,7 @@ a.topbarlink {
     letter-spacing: 1px;
     overflow: hidden;
     transition: letter-spacing 0.05s, font-size 0.1s, width 0.25s;
-
+    
 }
 #sortbutton:hover {
     letter-spacing: 1.5px;

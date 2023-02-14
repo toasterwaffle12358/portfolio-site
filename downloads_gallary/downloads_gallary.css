@@ -1,10 +1,10 @@
 body {
-	background-color: #3b3846;
+	background-color: #343434;
     color: white;
 }
 
 h1 {
-    background-color: #282532;
+    background-color: #1f1f1f;
     text-align: center;
     font-size: 75px;
     font-family: oswald;
@@ -17,7 +17,7 @@ h1 {
 }
 
 #topbar {
-    background-color: #282532;
+    background-color: #1f1f1f;
     font-family: oswald;
     font-weight: 300;
     margin: 10px;
@@ -46,7 +46,7 @@ h1 {
 }
 
 .topbarelement {
-    background-color: #3b3846;
+    background-color: #343434;
     border-radius: 10px;
     padding-left: 3px;
     padding-right: 5px;
@@ -65,7 +65,7 @@ h1 {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.398);
 }
 .s1container {
-    background-color: #282532;
+    background-color: #1f1f1f;
     font-family: oswald;
     margin: 10px;
     border-radius: 10px;
@@ -76,7 +76,7 @@ h1 {
     font-family: oswald;
     font-size: 25px;
     text-align: center;
-    background-color: #3b3846;
+    background-color: #343434;
     border-radius: 10px;
     margin-bottom: 5px;
     box-shadow: 3px 3px 4px #17151b;
@@ -116,7 +116,7 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 #topbarcontainer {
-    background-color: #3b3846;
+    background-color: #343434;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -158,7 +158,7 @@ a:hover {
     color: rgba(255,255,255,1)
 }
 #navbarmenubutton {
-    background-color: #3b3846;
+    background-color: #343434;
     box-shadow: 0 1px 6px rgb(0, 0, 0);
     display: inline-block;
     max-height: 40px;
@@ -184,7 +184,7 @@ a.topbarlink {
     text-decoration: none;
 }
 .section1content {
-    background-color: #3b3846;
+    background-color: #343434;
     border-radius: 10px;
     margin-top: 7px;
     margin-bottom: 7px;
@@ -215,7 +215,7 @@ a.topbarlink {
     flex-grow: 1;
 }
 #sortbutton {
-    background-color: #3b3846;
+    background-color: #343434;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 10px;

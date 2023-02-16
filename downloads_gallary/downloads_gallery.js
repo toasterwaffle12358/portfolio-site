@@ -29,7 +29,7 @@ function SortData() {
     console.log(sortmode)
 
 
-    if (sortmode == "pageload" || "oldest") {
+    if (sortmode == "pageload" || sortmode == "oldest") {
         //code to change sortmode to newest
 
 

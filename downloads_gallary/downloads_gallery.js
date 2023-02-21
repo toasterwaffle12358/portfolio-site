@@ -72,3 +72,19 @@ function SortData() {
 
 }
 
+function ShowHighRes(highresid) {
+    var highresimg = document.getElementById(highresid);
+
+    if (highresimg.style.display == "none") {
+        highresimg.style.display = "inline";
+        highresimg.style.height = "200%";
+        highresimg.style.transition = "height 1s";
+
+    } else {
+        highresimg.style.display = "none";
+        highresimg.style.height = "0%";
+    }
+
+    console.log(highresid);
+}
+

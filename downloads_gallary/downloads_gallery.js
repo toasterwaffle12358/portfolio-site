@@ -72,19 +72,58 @@ function SortData() {
 
 }
 
-function ShowHighRes(highresid) {
-    var highresimg = document.getElementById(highresid);
+var lastonimg = "none"
 
-    if (highresimg.style.display == "none") {
-        highresimg.style.display = "inline";
-        highresimg.style.height = "200%";
-        highresimg.style.transition = "height 1s";
+function ShowHighRes(highresid,infoid) {
+    var highresimg = document.getElementById(highresid);
+    var infoelemenet = document.getElementById(infoid)
+
+    if (highresimg.style.height == "0%") {
+        if (lastonimg != "none") {
+            lastonimg.style.display = "none";
+            console.log(lastonimg)
+        }
+        if (highresimg.naturalWidth <= highresimg.naturalHeight) {
+            highresimg.style.display = "inline";
+            highresimg.style.height = "250%";
+            highresimg.style.border = "solid 5px";
+            highresimg.style.borderColor =  "#2b2b2b";
+            var imgratio = highresimg.naturalWidth/highresimg.naturalHeight
+            var infowidth = imgratio*400
+            var infowidthstring = infowidth.toString().concat("%")
+            console.log(infowidthstring)
+            setTimeout(() => {
+                infoelemenet.style.width = infowidthstring
+                infoelemenet.style.border = "solid 5px";
+                infoelemenet.style.borderColor =  "#2b2b2b";
+                infoelemenet.style.paddingRight = "5px";
+            }, 500);
+        } else {
+            highresimg.style.display = "inline";
+            highresimg.style.width = "250%";
+            highresimg.style.border = "solid 5px";
+            infoelemenet.style.border = "solid 5px";
+            infoelemenet.style.borderColor =  "#2b2b2b";
+            infoelemenet.style.paddingRight = "5px";
+            highresimg.style.borderColor =  "#2b2b2b";
+            infoelemenet.style.width = "300%";
+        }
+
+
+
+        lastonimg = highresimg
 
     } else {
-        highresimg.style.display = "none";
-        highresimg.style.height = "0%";
+        lastonid = "none"
+        infoelemenet.style.width = "0%";
+        infoelemenet.style.border = "solid 0px";
+        infoelemenet.style.paddingRight = "0px";
+        infoelemenet.style.borderColor =  "#2b2b2b";
+        setTimeout(() => { 
+            highresimg.style.height = "0%";
+            highresimg.style.border = "solid 0px";
+            highresimg.style.borderColor =  "#2b2b2b";
+        }, 500);
+
     }
-
-    console.log(highresid);
 }
-

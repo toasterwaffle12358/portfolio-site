@@ -259,9 +259,31 @@ a.topbarlink {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     z-index: 2;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     display: none;
     pointer-events: none;
-    height: 0px;
-    transition: height 1s;
+    box-shadow: 0 1px 6px rgb(0, 0, 0), inset 0 1px 6px rgba(0, 0, 0, 0) ;
+    transition: height 0.25s;
+    border-color: var(--foreground);
+}
+.imginfo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    z-index: 1;
+    background-color: #161616;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 1px 6px rgb(0, 0, 0), inset 0 1px 6px rgba(0, 0, 0, 0);
+    width: 0%;
+    font-size: 2.5vw;
+    height: 250%;
+    opacity: 100%;
+    text-align: right;
+    overflow:hidden;
+    transition: width 0.25s ease-out, display 0.01s, border 0.25s ;
+    pointer-events: none;
+
 }

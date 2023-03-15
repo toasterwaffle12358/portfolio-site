@@ -1,10 +1,17 @@
+:root {
+    --foreground: #2c2c2c;
+    --dark-inset: #1c1c1c;
+    --purple-accent: rgb(202, 196, 255);
+}
+
+
 body {
-	background-color: #3b3846;
+	background-color: var(--foreground);
     color: white;
 }
 
 h1 {
-    background-color: #282532;
+    background-color: var(--dark-inset);
     text-align: center;
     font-size: 75px;
     font-family: oswald;
@@ -17,7 +24,7 @@ h1 {
 }
 
 #topbar {
-    background-color: #282532;
+    background-color: var(--dark-inset);
     font-family: oswald;
     font-weight: 300;
     margin: 10px;
@@ -45,7 +52,7 @@ h1 {
     overflow: hidden;
 }
 section {
-    background-color: #282532;
+    background-color: var(--dark-inset);
     font-family: oswald;
     margin: 10px;
     border-radius: 10px;
@@ -71,7 +78,7 @@ section {
     border-radius: 2px;
 }
 #img1container {
-    background-color: #282532;
+    background-color: var(--dark-inset);
     border-radius: 15px;
     padding: 10px;
     box-shadow: inset 0 1px 6px rgb(0, 0, 0);
@@ -83,7 +90,7 @@ section {
 
 }
 .topbarelement {
-    background-color: #3b3846;
+    background-color: var(--foreground);
     border-radius: 10px;
     padding-left: 3px;
     padding-right: 5px;
@@ -102,7 +109,7 @@ section {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.398);
 }
 .s1container {
-    background-color: #282532;
+    background-color: var(--dark-inset);
     font-family: oswald;
     margin: 10px;
     border-radius: 10px;
@@ -113,14 +120,19 @@ section {
     font-family: oswald;
     font-size: 25px;
     text-align: center;
-    background-color: #3b3846;
+    background-color: var(--foreground);
     border-radius: 10px;
     margin-bottom: 5px;
     box-shadow: 3px 3px 4px #17151b;
+    /*
+    border: var(--purple-accent) 2px;
+    border-style:solid;
+    */
+
 
 }
 #linksmain {
-    background-color: #3b3846;
+    background-color: var(--foreground);
     border-radius: 10px;
     margin-top: 7px;
     padding: 5px;
@@ -169,7 +181,7 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 #topbarcontainer {
-    background-color: #3b3846;
+    background-color: var(--foreground);
     position: fixed;
     top: 0px;
     left: 0px;
@@ -211,7 +223,7 @@ a:hover {
     color: rgba(255,255,255,1)
 }
 #navbarmenubutton {
-    background-color: #3b3846;
+    background-color: var(--foreground);
     box-shadow: 0 1px 6px rgb(0, 0, 0);
     display: inline-block;
     max-height: 40px;

@@ -261,7 +261,7 @@ a.topbarlink {
     z-index: 2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    display: none;
+    height: 0%;
     pointer-events: none;
     box-shadow: 0 1px 6px rgb(0, 0, 0), inset 0 1px 6px rgba(0, 0, 0, 0) ;
     transition: height 0.25s;
@@ -285,5 +285,7 @@ a.topbarlink {
     overflow:hidden;
     transition: width 0.25s ease-out, display 0.01s, border 0.25s ;
     pointer-events: none;
-
+}
+.downloadlink {
+    pointer-events: auto;
 }
